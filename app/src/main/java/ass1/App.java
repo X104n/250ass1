@@ -1,3 +1,5 @@
+package ass1;
+
 import io.javalin.Javalin;
 
 public class App {
