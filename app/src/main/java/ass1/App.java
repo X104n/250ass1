@@ -33,7 +33,7 @@ public class App {
         });
     }
 
-    private static double getConversionFactor(String unit) {
+    public static double getConversionFactor(String unit) {
         switch (unit) {
             case "in":
                 return 0.0254;
