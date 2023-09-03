@@ -7,6 +7,11 @@ import java.nio.file.Paths;
 
 public class App {
 
+    /**
+     * Main method for the application
+     * Starts the Javalin server and defines the routes
+     * @param args Command line arguments
+     */
     public static void main(String[] args) {
         Javalin app = Javalin.create().start(9000);
 
@@ -33,6 +38,11 @@ public class App {
         });
     }
 
+    /**
+     * Returns the conversion factor for the given unit
+     * @param unit The unit to get the conversion factor for
+     * @return The conversion factor
+     */
     public static double getConversionFactor(String unit) {
         switch (unit) {
             case "in":
